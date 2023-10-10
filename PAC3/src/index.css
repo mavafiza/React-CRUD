@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rubik+Dirt&display=swap');
+
+  body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: Orbitron, sans-serif;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: whitesmoke;
+  background-color: #6ed2e0;
+  margin: 1px;
+}
+button:hover {
+  background-color: #c2edf4;
+  color: #071272;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  /* :root {
+    color: #213547;
+    background-color: #ffffff;
+  } */
+  /* a:hover {
+    color: #747bff;
+  } */
+
+}
+
+header{
+  background-image: url(../src/assets/header1.avif);
+  background-size: contain;
+  width: 100%;
+  height: 250px;
+  justify-content: center;
+  color: rgb(7, 18, 114);
+  margin: 0;
+  display: flex;
+  place-items: center;
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  /* background-image: url(../src/assets/circle2.avif); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  justify-content: center;
+}
+.addButton {
+  position: absolute;
+  bottom: 20px; /* Ajusta esta propiedad según la distancia que desees desde el borde inferior */
+  right: 20px; /* Ajusta esta propiedad según la distancia que desees desde el borde derecho */
+  padding: 10px 20px;
+  background-color: #ff5900;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.addButton:hover{
+  background-color: #f6884ddf;
+  color: #c74804;
+}
+ .centrar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ } 
+
+input {
+  border-radius: 5px;
+  height: 45px;
+  width: 300px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 0;
+}
+li {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  margin-bottom: 25px;
+}
+
+form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  /* border: 2px solid rgba(17, 126, 150, 0.515); */
+}
+.orderButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* App.css */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.introHome {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: stretch;
+  background-image: radial-gradient(circle, 
+  #072454e6,
+  #2794caf0, 
+  #6ed2e0);
+  transition: background-image 0.3s ease;
+}
+.introHome:hover {
+  background-image: radial-gradient(circle, 
+  #072454e6,
+  #2794caf0, 
+  #8bd1f3c1);
+  transition: background-image 0.3s ease;
+  transform: matrix3d();
+}
+
+  
+.introButton {
+  transition: 1000ms;
+  font-weight: 900;
+  font-size: 140px;
+  text-decoration: none;
+  color: #ff5900;
+  margin: 0;
+  padding: 5%;
+  border-radius: 50%;
+  /* border: solid 2px black; */
+}
+.introButton:hover {
+  transition: 1000ms;
+  color: whitesmoke;
+}
